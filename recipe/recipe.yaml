@@ -1,6 +1,6 @@
 context:
   name: pyvista-validation
-  version: "0.2.2"
+  version: "0.5.1"
 
 package:
   name: ${{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/${{ name }}/pyvista_validation-${{ version }}.tar.gz
-  sha256: af234130a3b34b3e1af49584d75b41fafc694752b2958b36e9dbfd9f188e6a0c
+  sha256: 16046fa656760a8bd6306a7889c9df8d0a8bd49c7d89fce6976aabadb5d0d9d4
   # Drop the optional C accelerator so the package stays noarch: without this the
   # extension is built wherever the image happens to carry a compiler.
   patches:
